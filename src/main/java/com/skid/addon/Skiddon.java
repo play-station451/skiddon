@@ -3,6 +3,7 @@ package com.skid.addon;
 import com.skid.addon.commands.CommandExample;
 import com.skid.addon.hud.HudExample;
 import com.skid.addon.modules.AutoTPA;
+import com.skid.addon.modules.LitematicaPrinter;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
