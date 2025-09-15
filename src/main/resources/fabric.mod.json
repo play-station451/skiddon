@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "skiddon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Skiddon",
+  "description": "An Skiddon for Meteor Client addons.",
   "authors": [
-    "seasnail"
+    "playstation451"
   ],
   "contact": {
     "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
@@ -14,11 +14,11 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.skid.addon.Skiddon"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "skiddon.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"
