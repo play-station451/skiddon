@@ -2,8 +2,7 @@ package com.skid.addon;
 
 import com.skid.addon.commands.CommandExample;
 import com.skid.addon.hud.HudExample;
-import com.skid.addon.modules.AutoTPA;
-import com.skid.addon.modules.LitematicaPrinter;
+import com.skid.addon.modules.*;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -24,7 +23,13 @@ public class Skiddon extends MeteorAddon {
         LOG.info("Initializing Skiddon");
 
         // Modules
+        Modules.get().add(new AFKVanillaFly());
         Modules.get().add(new AutoTPA());
+        Modules.get().add(new LitematicaPrinter());
+        Modules.get().add(new Pitch40Util());
+        Modules.get().add(new TrailFollower());
+        Modules.get().add(new TrailMaker());
+        Modules.get().add(new VillagerRoller());
 
         // Commands
         Commands.add(new CommandExample());

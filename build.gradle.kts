@@ -21,6 +21,10 @@ repositories {
         name = "jitpack"
         url = uri("https://jitpack.io")
     }
+    maven {
+        name = "modrinth"
+        url = uri("https://api.modrinth.com/maven")
+    }
 }
 
 dependencies {
@@ -35,6 +39,21 @@ dependencies {
     // Litematica
     modImplementation("com.github.sakura-ryoko:litematica:${properties["minecraft_version"] as String}-${properties["litematica_version"] as String}")
     modImplementation("com.github.sakura-ryoko:malilib:${properties["minecraft_version"] as String}-${properties["malilib_version"] as String}")
+
+    // XaeroPlus
+    modImplementation("maven.modrinth:xaeroplus:${project.properties["xaeroplus_version"] as String}")
+
+    // XaeroWorldMap
+    modImplementation("maven.modrinth:xaeros-world-map:${project.properties["xaeros_worldmap_version"] as String}")
+
+    // XaeroMinimap
+    modImplementation("maven.modrinth:xaeros-minimap:${project.properties["xaeros_minimap_version"] as String}")
+
+    // lenni
+    modImplementation("net.lenni0451:LambdaEvents:2.4.2")
+    modImplementation("com.github.ben-manes.caffeine:caffeine:3.1.8")
+
+    modCompileOnly("meteordevelopment:baritone:${project.properties["baritone_version"] as String}")
 }
 
 tasks {
