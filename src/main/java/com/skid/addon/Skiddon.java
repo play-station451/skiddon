@@ -31,7 +31,11 @@ public class Skiddon extends MeteorAddon {
         Modules.get().add(new AutoLavaCaster());
         Modules.get().add(new AutoMountain());
         Modules.get().add(new AutoTPA());
+        Modules.get().add(new BaseFinder());
+        Modules.get().add(new BetterAutoSign());
+        Modules.get().add(new BungeeSpoofer());
         Modules.get().add(new FlightAntikick());
+        Modules.get().add(new LavaAura());
         Modules.get().add(new LitematicaPrinter());
         Modules.get().add(new Pitch40Util());
         Modules.get().add(new TPFly());
